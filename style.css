@@ -1,0 +1,247 @@
+:root {
+    --bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    --accent: #00f5d4;
+    --accent-dark: #00bbf9;
+    --text-light: #e0e0e0;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Global Settings */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(120deg, #1f1c2c, #928dab);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+
+    opacity: 0.07;
+  }
+  
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    color: var(--accent);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent);
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  
+  .hero h2 {
+    font-size: 40px;
+  }
+  
+  .hero p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #cce3de;
+  }
+  
+  .btn {
+    background-color: var(--accent);
+    padding: 12px 25px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  /* UNIQUE Resume Button */
+  .resume-btn {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 245, 212, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .resume-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+    box-shadow: 0 6px 25px rgba(0, 245, 212, 0.5);
+  }
+  
+  /* Sections */
+  section {
+    margin-top: 40px;
+  }
+  
+  .glass-box {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px 0;
+  }
+  
+  /* Skills */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .skills span {
+    background: var(--accent);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 10px var(--accent);
+    transition: transform 0.3s;
+  }
+  
+  .skills span:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Projects */
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 245, 212, 0.3);
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #f8f9fa;
+    color: #000;
+  }
+  
+  button {
+    background: var(--accent);
+    color: black;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: var(--accent-dark);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .hero h2 {
+      font-size: 28px;
+    }
+  }
+  
+  
+  
