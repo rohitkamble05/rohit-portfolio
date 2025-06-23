@@ -76,7 +76,7 @@
   }
   .navbar-background {
   background: linear-gradient(-45deg, #00ffff, #ff00ff, #6600ff, #00ffcc);
-  background-size: 400% 400%;
+  background-size: 400% 100%;
   animation: gradientBG 15s ease infinite;
   padding: 20px 0;
 }
