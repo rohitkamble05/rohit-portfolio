@@ -47,16 +47,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;  
   }
   
   .logo {
-    font-size: 32px;
+    font-size: 100px;
     font-weight: bold;
+     
   }
   
   .logo span {
     color: var(--accent);
+    padding-right: 50px;
   }
   
   .nav-links {
@@ -74,11 +77,17 @@
   .nav-links a:hover {
     color: var(--accent);
   }
-.navbar-background {
-  background: linear-gradient(90deg, #00ffff, #ff00ff, #6600ff, #00ffcc);
-  background-size: 400% 100%;
-  animation: horizontalGradient 10s linear infinite;
-  padding: 20px 0;
+ 
+*.navbar-background {
+  background: linear-gradient(90deg, #00ffff, #f358f3, #ba97ef, #c2ff33);
+  background-size: 600% 600%;
+  animation: horizontalGradient 30s linear infinite;
+  padding: 20px 320px;
+    border-radius: 25px 25px 25px 25px; /* curvy bottom edges */
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 @keyframes horizontalGradient {
@@ -88,11 +97,11 @@
   100% {
     background-position: 100% 0%;
   }
-}
+}*/
 
 .navbar {
   display: flex;
-  justify-content: center; /* or flex-end */
+  justify-content: center;
   gap: 40px;
 }
 
@@ -102,6 +111,71 @@
   font-size: 18px;
   font-weight: bold;
 }
+/*.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #8b43d8, #2575fc); /* colorful gradient */
+ /* padding: 15px 40px;
+  border-radius: 0 0 25px 25px; /* curvy bottom edges */
+ /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}*/
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: #00fff7;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffeb3b;
+  transform: scale(1.05);
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  /* General reset and body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+}
+
 
   
   /* Hero Section */
