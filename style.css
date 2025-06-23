@@ -74,6 +74,38 @@
   .nav-links a:hover {
     color: var(--accent);
   }
+  .navbar-background {
+  background: linear-gradient(-45deg, #00ffff, #ff00ff, #6600ff, #00ffcc);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  padding: 20px 0;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 0 60px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
   
   /* Hero Section */
   .hero {
