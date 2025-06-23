@@ -344,6 +344,20 @@
     .hero h2 {
       font-size: 28px;
     }
+    
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px 15px;      /* Slightly reduce padding */
+  }
+  .nav-links {
+    gap: 15px;               /* Smaller gaps between links */
+  }
+  .nav-links a {
+    font-size: 14px;         /* Slightly smaller font */
+    padding: 6px 10px;       /* Tighter link padding */
+  }
+}
+
   }
   
   
