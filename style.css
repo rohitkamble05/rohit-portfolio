@@ -333,32 +333,63 @@
     font-size: 14px;
     color: #ccc;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .hero h2 {
-      font-size: 28px;
-    }
-    
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
   .navbar {
-    padding: 20px 15px;      /* Slightly reduce padding */
+    padding: 15px;
   }
+
   .nav-links {
-    gap: 15px;               /* Smaller gaps between links */
+    flex-wrap: wrap;
+    gap: 10px;
   }
+
   .nav-links a {
-    font-size: 14px;         /* Slightly smaller font */
-    padding: 6px 10px;       /* Tighter link padding */
+    font-size: 14px;
+    padding: 6px 10px;
   }
+
+  section {
+    padding: 50px 15px;
+  }
+
+  h1, h2, h3 {
+    font-size: 90%;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+  }
+  .container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+.skills, .projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-  }
+}
+
+ 
+
+
+  
   
   
   
