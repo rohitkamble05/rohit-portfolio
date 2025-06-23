@@ -80,9 +80,9 @@
  
 *.navbar-background {
   background: linear-gradient(90deg, #00ffff, #f358f3, #ba97ef, #c2ff33);
-  background-size: 600% 600%;
+  background-size: 400% 100%;
   animation: horizontalGradient 30s linear infinite;
-  padding: 20px 320px;
+  padding: 20px 100px;
     border-radius: 25px 25px 25px 25px; /* curvy bottom edges */
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
   position: sticky;
@@ -333,7 +333,7 @@
     font-size: 14px;
     color: #ccc;
   }
-  @media screen and (max-width: 768px) {
+  @media only screen and (max-width: 455px) {
   body {
     font-size: 15px;
   }
@@ -384,7 +384,7 @@
   justify-content: center;
 }
 /* ✅ Navbar Responsive Fix */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 455px) {
   .navbar {
     flex-direction: column;
     align-items: center;
