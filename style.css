@@ -199,7 +199,7 @@
     gap: 15px;
     margin-top: 10px;
   }
-  /* General reset and body */
+
 * {
   margin: 0;
   padding: 0;
@@ -229,6 +229,7 @@
   
   .hero h2 {
     font-size: 40px;
+    color: #ecffc1;
   }
   
   .hero p {
@@ -352,7 +353,8 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: all 0.3s ease;
+
   }
   
   button:hover {
