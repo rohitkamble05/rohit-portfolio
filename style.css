@@ -230,8 +230,9 @@
   
   
   .hero h2 {
+   
     font-size: 40px;
-    color: #ecffc1;
+    color: #ffffff;
   }
   
   .hero p {
@@ -302,7 +303,9 @@
     padding: 10px 20px;
     border-radius: 30px;
     font-weight: bold;
-    box-shadow: 0 0 10px var(--accent);
+   
+    box-shadow: 0 0 10px #d9a7ff;
+
     transition: transform 0.3s;
   }
   
