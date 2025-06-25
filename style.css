@@ -242,15 +242,23 @@
   }
   
   .btn {
-    background-color: var(--accent);
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
     padding: 12px 25px;
-    border: none;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    border-radius: 30px;
-    margin-top: 20px;
+    border-radius: 45px;
+    margin-top: 5px;
     display: inline-block;
+     box-shadow: 0 4px 15px rgba(0, 245, 212, 0.3);
+      position: relative;
+    overflow: hidden;
+      transition: all 0.3s ease;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+    box-shadow: 0 6px 25px rgba(0, 245, 212, 0.5);
   }
   
   /* UNIQUE Resume Button */
