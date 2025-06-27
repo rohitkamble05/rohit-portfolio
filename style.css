@@ -233,7 +233,7 @@
 }
 
 .hero-text h2 {
-  font-size: 32px;
+  font-size: 40px;
   color: white;
 }
 
@@ -421,13 +421,13 @@
     font-size: 14px;
     color: #ccc;
   }
-  @media only screen and (max-width: 455px) {
+  @media only screen and (max-width: 460px) {
   body {
     font-size: 15px;
   }
 
   .navbar {
-    padding: 15px;
+    padding: 35px;
   }
 
   .nav-links {
