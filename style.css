@@ -1,154 +1,84 @@
 :root {
-    --bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    --accent: #00f5d4;
-    --accent-dark: #00bbf9;
-    --text-light: #e0e0e0;
-    --glass-bg: rgba(255, 255, 255, 0.1);
-  }
-  
-  /* Global Settings */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  body {
-    background: linear-gradient(120deg, #1f1c2c, #928dab);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    min-height: 100vh;
-    position: relative;
-    z-index: 1;
-  }
-  
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+  --bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --accent: #00f5d4;
+  --accent-dark: #00bbf9;
+  --text-light: #e0e0e0;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+}
 
-    opacity: 0.07;
-  }
-  
-  
-  .container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  /* Header */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;  
-  }
-  
-  .logo {
-    font-size: 100px;
-    font-weight: bold;
-    justify-content: center;
-     
-  }
-  
-  .logo span {
-    color: var(--accent);
-    padding-right: 50px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: var(--accent);
-  }
- 
-*.navbar-background {
-  background: linear-gradient(90deg, #00ffff, #f358f3, #ba97ef, #c2ff33);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #1f1c2c, #928dab);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png');
+  opacity: 0.07;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar-background {
+  width: 100%;
+  background: linear-gradient(90deg, #f358f3, #ba97ef, #007c7c, #c2ff33,#f358f3);
   background-size: 400% 100%;
   animation: horizontalGradient 30s linear infinite;
-  padding: 1rem 5%;
-  border-radius: 25px;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
   z-index: 999;
+  padding: 15px 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
+  border-radius: 40px;
 }
-
-@media (max-width: 350px) {
-  .navbar-background {
-    padding: 1rem 2%;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-  }
-}
-
-
-@keyframes horizontalGradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
-}*/
 
 .navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-.navbar a {
-  display: flex;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
- /* background: linear-gradient(135deg, #8b43d8, #2575fc);*/ /* colorful gradient */
- padding: 1px 4px;
-  border-radius: 25px 25px 25px 25px; /* curvy bottom edges */
- box-shadow: 0 4px 10px rgba(0, 0, 0, 0.323);
+  gap: 15px;
+  width: 100%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
   position: sticky;
-  top: 0;
   z-index: 999;
+  background: linear-gradient(90deg, #f358f3, #ba97ef, #007c7c, #c2ff33,#f358f3 );
+  background-size: 400% 100%;
+  animation: horizontalGradient 30s linear infinite;
 }
+
 
 .logo {
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 50px;
   font-weight: bold;
   color: white;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .logo span {
@@ -157,57 +87,51 @@
 
 .nav-links {
   display: flex;
+  flex-direction: row;
   gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15px;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 16px;
   transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 10px;
 }
 
 .nav-links a:hover {
   color: #ffeb3b;
-  transform: scale(1.05);
+  transform: scalex(1.05);
+  background: rgba(0, 0, 0, 0.1);
 }
-@media (max-width: 470px) {
+
+@keyframes horizontalGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+@media (max-width: 768px) {
   .logo {
-    font-size: 32px;
+    font-size: 25px;
     margin-bottom: 10px;
-    justify-content: center;
   }
 
   .nav-links {
-    flex-direction: column;
-    align-items: center;
     gap: 15px;
   }
 }
 
 
-/* Responsive for mobile */
-@media screen and (max-width: 200px) {
-  .navbar {
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 0 0 20px 20px;
-  }
 
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 10px;
-  }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-}
 
 
 /* Hero Section */
@@ -504,7 +428,6 @@
  
 
 
-  
   
   
   
