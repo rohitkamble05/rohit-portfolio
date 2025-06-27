@@ -121,12 +121,12 @@ body::before {
 
 @media (max-width: 768px) {
   .logo {
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 2px;
   }
 
   .nav-links {
-    gap: 15px;
+    gap: 5px;
   }
 }
 
@@ -207,7 +207,7 @@ body::before {
   
   .btn {
     background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-    padding: 12px 25px;
+    padding: 10px 22px;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -229,7 +229,7 @@ body::before {
   .resume-btn {
     display: inline-block;
     margin-left: 15px;
-    padding: 12px 30px;
+    padding: 10px 25px;
     font-size: 16px;
     font-weight: bold;
     border-radius: 30px;
@@ -368,7 +368,7 @@ body::before {
 .footer-links a:hover {
   color: #c2ff33;
    transform: scalex(1.05);
-  background: rgb(100, 200, 200;
+  background: rgb(100, 200, 200);
 }
 
 /* Font Awesome CDN for icons */
