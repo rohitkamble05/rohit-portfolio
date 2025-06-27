@@ -340,7 +340,7 @@ body::before {
   
   /* Footer */
  .footer {
-  background-color: #1e1e2f;
+  background-color: #000000;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -367,6 +367,8 @@ body::before {
 
 .footer-links a:hover {
   color: #c2ff33;
+   transform: scalex(1.05);
+  background: rgb(100, 200, 200;
 }
 
 /* Font Awesome CDN for icons */
