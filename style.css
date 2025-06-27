@@ -421,13 +421,13 @@
     font-size: 14px;
     color: #ccc;
   }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 768px) {
   body {
     font-size: 15px;
   }
 
   .navbar {
-    padding: 38px;
+    padding: 33px;
   }
 
   .nav-links {
