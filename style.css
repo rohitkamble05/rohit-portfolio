@@ -367,8 +367,8 @@ body::before {
 
 .footer-links a:hover {
   color: #c2ff33;
-   transform: scalex(1.05);
-  background: rgb(100, 200, 200);
+    transform: scalex(1.05);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* Font Awesome CDN for icons */
