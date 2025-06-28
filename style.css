@@ -42,7 +42,7 @@ body::before {
 /* Navbar */
 .navbar-background {
   width: 100%;
-  background: linear-gradient(90deg, #f358f3, #ba97ef, #007c7c, #ff333399,#f358f3);
+  background: linear-gradient(90deg, #f358f3, #ba97ef, #007c7c, #ef5d5d,#f358f3);
   background-size: 400% 100%;
   animation: horizontalGradient 30s linear infinite;
   position: sticky;
@@ -67,7 +67,7 @@ body::before {
   border-radius: 40px;
   position: sticky;
   z-index: 999;
-  background: linear-gradient(90deg, #f358f3, #ba97ef, #007c7c, #ff333399,#f358f3 );
+  background: linear-gradient(90deg, #f358f3, #ba97ef, #007c7c, #ef5d5d,#f358f3 );
   background-size: 400% 100%;
   animation: horizontalGradient 30s linear infinite;
 }
@@ -92,6 +92,7 @@ body::before {
   flex-wrap: wrap;
   justify-content: center;
   border-radius: 10px;
+
 }
 
 .nav-links a {
