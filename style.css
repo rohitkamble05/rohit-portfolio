@@ -42,7 +42,7 @@ body::before {
 /* Navbar */
 .navbar-background {
   width: 100%;
-  background: linear-gradient(90deg, #f358f3, #ba97ef, #007c7c, #ef5d5d,#f358f3);
+  background: linear-gradient(90deg, #f358f3, #ba97ef, #32c98a, #9497ec,#f358f3);
   background-size: 400% 100%;
   animation: horizontalGradient 30s linear infinite;
   position: sticky;
@@ -67,7 +67,7 @@ body::before {
   border-radius: 40px;
   position: sticky;
   z-index: 999;
-  background: linear-gradient(90deg, #f358f3, #ba97ef, #007c7c, #ef5d5d,#f358f3 );
+  background: linear-gradient(90deg, #f358f3, #ba97ef, #32c98a,#9497ec,#f358f3 );
   background-size: 400% 100%;
   animation: horizontalGradient 30s linear infinite;
 }
@@ -82,7 +82,7 @@ body::before {
 }
 
 .logo span {
-  color: #00fff7;
+  color:#00fff7;
 }
 
 .nav-links {
@@ -276,9 +276,7 @@ body::before {
     padding: 10px 20px;
     border-radius: 30px;
     font-weight: bold;
-   
-    box-shadow: 0 0 10px #d9a7ff;
-
+    box-shadow: 0 0 20px #d9a7ff;
     transition: transform 0.3s;
   }
   
@@ -306,7 +304,7 @@ body::before {
     box-shadow: 0 4px 20px rgba(0, 245, 212, 0.3);
   }
   
-  /* Contact Form */
+
   form {
     display: flex;
     flex-direction: column;
@@ -339,9 +337,9 @@ body::before {
     background: var(--accent-dark);
   }
   
-  /* Footer */
+
  .footer {
-  background-color: #3c3737;
+  background-color: #162630;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -361,15 +359,15 @@ body::before {
 .footer-links a {
   color: #00ffff;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 20px;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: #c2ff33;
+  color: #ffff09;
     transform: scalex(1.05);
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Font Awesome CDN for icons */
@@ -468,11 +466,11 @@ body::before {
 
 .typed-text {
   font-weight: bold;
-  color: #ff0000; /* or any accent color */
+  color: #ff0000; 
 }
 @media (max-width: 768px) {
   .typed-text {
-    font-size: 2.5rem; /* Slightly smaller font size */
+    font-size: 2.5rem; 
   }
 
   .cursor {
