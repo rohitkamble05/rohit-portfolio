@@ -470,6 +470,30 @@ body::before {
   font-weight: bold;
   color: #ff0000; /* or any accent color */
 }
+@media (max-width: 768px) {
+  .typed-text {
+    font-size: 2.5rem; /* Slightly smaller font size */
+  }
+
+  .cursor {
+    font-size: 2.5rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .typed-text {
+    font-size: 2rem; 
+  }
+
+  .cursor {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem; 
+  }
+}
 
 
   
