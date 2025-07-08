@@ -33,7 +33,8 @@
   <div class="hero-content">
     <div class="hero-text">
       <h2>Hello, I'm Rohit 👨‍💻</h2>
-      <h4>Web Developer Passionate about building beautiful web interfaces.</h4>
+ <h2>I am a <span class="typed-text"></span><span class="cursor">|</span></h2>
+<p>Web Developer Passionate about building beautiful web interfaces.</p>
       <div class="btn-group">
         <a href="#projects" class="btn">See My Work</a>
         <a href="Rohit_Vijay_Kamble_Resume.pdf" download class="resume-btn">Download Resume</a>
@@ -110,9 +111,34 @@
     </div>
   </div>
 </footer>
-
-
   </div>
+  <script>
+  const texts = ["Front-End Developer", "Back-End Developer", "Programmer"];
+  let count = 0;
+  let index = 0;
+  let currentText = "";
+  let letter = "";
+
+  (function type() {
+    if (count === texts.length) count = 0;
+
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.querySelector(".typed-text").textContent = letter;
+
+    if (letter.length === currentText.length) {
+      setTimeout(() => {
+        index = 0;
+        count++;
+        setTimeout(type, 500);
+      }, 1500);
+    } else {
+      setTimeout(type, 100);
+    }
+  })();
+</script>
+
 </body>
 </html>
 

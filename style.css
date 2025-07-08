@@ -454,6 +454,23 @@ body::before {
 }
 
 }
+.cursor {
+  display: inline-block;
+  font-weight: bold;
+  color: #000;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typed-text {
+  font-weight: bold;
+  color: #ff0000; /* or any accent color */
+}
+
 
   
   
