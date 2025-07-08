@@ -14,7 +14,7 @@
 }
 
 body {
-  background: linear-gradient(120deg, #1f1c2c, #928dab);
+  background: linear-gradient(120deg,#1f1c2c, #928dab);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@ body::before {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: auto;
   padding: 20px;
 }
@@ -55,7 +55,7 @@ body::before {
 }
 
 .navbar {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -341,7 +341,7 @@ body::before {
   
   /* Footer */
  .footer {
-  background-color: #000000;
+  background-color: #3c3737;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -455,9 +455,5 @@ body::before {
 
 }
 
- 
-
-
-  
   
   
