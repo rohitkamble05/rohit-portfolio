@@ -132,7 +132,45 @@ body::before {
   }
 }
 
+h2 {
+  font-size: 5vw; /* Responsive font size */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 10px;
+}
 
+.typewriter-container {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.2rem, 5vw, 2rem); /* ✅ Mobile responsive font size */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+}
+
+.typed-text {
+  color: orange;
+}
+
+.cursor {
+  display: inline-block;
+  color: orange;
+  animation: blink 0.7s infinite;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
 
 
