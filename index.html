@@ -35,10 +35,16 @@
     <section class="hero">
       <div class="hero-content">
         <div class="hero-text">
-          <h2>Hello, I'm Rohit 👨‍💻</h2>
-         <div class="typewriter-container">
-  <h2>I am a <span class="typed-text"></span><span class="cursor">|</span></h2>
-</div>
+
+          <div class="hero-text">
+            <h3 class="name-heading">Hello, I'm Rohit 👨‍💻</h3>
+            <!-- <h2 class="typed-heading">
+              I am a<span class="typed-text"></span><span class="cursor">|</span>
+            </h2> -->
+            <h2 class="typed-heading">
+            I am a <span class="typed-text"></span><span class="cursor">|</span>
+            </h2>
+          </div>
 
           <p>Web Developer Passionate about building beautiful web interfaces.</p>
           <div class="btn-group">
@@ -164,27 +170,37 @@
     let count = 0;
     let index = 0;
     let currentText = "";
-    let letter = "";
+    let isDeleting = false;
 
-    (function type() {
-      if (count === texts.length) count = 0;
-
+    function type() {
       currentText = texts[count];
-      letter = currentText.slice(0, ++index);
 
-      document.querySelector(".typed-text").textContent = letter;
-
-      if (letter.length === currentText.length) {
-        setTimeout(() => {
-          index = 0;
-          count++;
-          setTimeout(type, 500);
-        }, 1500);
+      if (isDeleting) {
+        index--;
       } else {
-        setTimeout(type, 100);
+        index++;
       }
-    })();
+
+      const textToShow = currentText.slice(0, index);
+      document.querySelector(".typed-text").textContent = textToShow;
+
+      let typingSpeed = isDeleting ? 50 : 100;
+
+      if (!isDeleting && index === currentText.length) {
+        typingSpeed = 1200; // Pause before deleting
+        isDeleting = true;
+      } else if (isDeleting && index === 0) {
+        isDeleting = false;
+        count = (count + 1) % texts.length; // Safely loop through
+        typingSpeed = 500;
+      }
+
+      setTimeout(type, typingSpeed);
+    }
+
+    document.addEventListener("DOMContentLoaded", type);
   </script>
+
 </body>
 
 </html>

@@ -132,47 +132,77 @@ body::before {
   }
 }
 
-h2 {
-  font-size: 5vw; /* Responsive font size */
+
+ .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
+  gap: 10px;
+  padding: 4px 1px;
+ }
+
+ /* .hero-text {
+  padding: 20px;
+  text-align: center;
   max-width: 100%;
-  padding: 10px;
+  box-sizing: border-box;
+} */
+
+
+.name-heading {
+  font-size: clamp(28px, 6vw, 48px);
+  color: white;
+  margin: 0;
+  padding-right: 65px;
 }
 
-.typewriter-container {
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-  padding: 1rem;
-}
-
-h2 {
-  font-size: clamp(1.2rem, 5vw, 2rem); /* ✅ Mobile responsive font size */
+/* .typed-heading {
+  font-size: clamp(20px, 5vw, 32px);
+  font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   color: white;
+  margin: 0;
 }
 
 .typed-text {
   color: orange;
+  display: inline-block;
+  white-space: nowrap;
+  min-width: 220px;
+} */
+.typed-heading {
+  font-size: clamp(16px, 5vw, 32px); /* responsive scaling */
+  white-space: nowrap;               /* prevents line break */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  text-align: center;
 }
 
+
+.typed-text {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .typed-heading {
+    font-size: 32px; /* Normal size on tablets/desktops */
+  }
+}
+
+
 .cursor {
-  display: inline-block;
   color: orange;
-  animation: blink 0.7s infinite;
   font-weight: bold;
+  animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
-
-
 
 /* Hero Section */
 .hero {
@@ -196,8 +226,12 @@ h2 {
   min-width: 280px;
 }
 
+.hero-text h3 {
+  font-size: 30px;
+  color: white;
+}
 .hero-text h2 {
-  font-size: 35px;
+  font-size: 25px;
   color: white;
 }
 
@@ -208,7 +242,7 @@ h2 {
 }
 
 .btn-group {
-  margin-top: 20px;
+  margin-top: 1px;
 }
 
 .hero-image {
@@ -526,7 +560,7 @@ section {
   h2,
   h3 {
     font-size: 90%;
-  }
+  } 
 
   .project-container {
     display: flex;
@@ -614,25 +648,25 @@ section {
 
 @media (max-width: 768px) {
   .typed-text {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .cursor {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   }
 }
 
 
 @media (max-width: 480px) {
   .typed-text {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .cursor {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
+   h2 {
+    font-size: 5px;
+  } 
 }
